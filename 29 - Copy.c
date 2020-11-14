@@ -1,23 +1,27 @@
-#includestdio.h
-void swapped(int n1,int n2);
-int main()
-{
-    int num1,num2;
+#include <stdio.h>
 
-    printf(Enter the first number );
-    scanf(%d,&num1);
-    printf(Enter the second number );
-    scanf(%d,&num2);
-    printf(Before swapping  %d ,%d,num1,num2);
-    swapped(&num1,&num2);
+void swap(int *x, int *y);
+ 
+int main () {
+   int a = 100;
+   int b = 200;
+ 
+   printf("Before swap, value of a : %d\n", a );
+   printf("Before swap, value of b : %d\n", b );
 
-    printf(After swapping  %d ,%d,num1,num2);
-    return 0;
+   swap(&a, &b);
+
+   printf("After swap, value of a : %d\n", a );
+   printf("After swap, value of b : %d\n", b );
+ 
+   return 0;
 }
-void swapped(int n1,int n2)
-{
-    int temp;
-    temp=n1;
-    n1=n2;
-    n2=temp;
+void swap(int *x, int *y) {
+
+   int temp;
+   temp = *x;    
+   *x = *y; 
+   *y = temp;    
+  
+   return;
 }
