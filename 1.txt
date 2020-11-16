@@ -1,7 +1,9 @@
-#include<stdio.h>  
-int main()    
+#include<stdio.h> 
+#include<conio.h> 
+void main()    
 { 
-  int n,rev=0,sum=0,m;    
+  int n,rev=0,sum=0,m;
+  clrscr();    
   printf("Enter a number:");    
   scanf("%d",&n);    
   while(n>0)
@@ -13,5 +15,5 @@ int main()
   }    
   printf("Sum is=%d\n",sum);
   printf("Reverse is=%d", rev);    
-  return 0;
+  getch();
 }   

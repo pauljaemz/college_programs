@@ -1,6 +1,8 @@
 #include <stdio.h>
-int main() {
+#include <conio.h>
+void main() {
    int year;
+   clrscr();
    printf("Enter a year: ");
    scanf("%d", &year);
    if (year % 400 == 0) {
@@ -15,5 +17,5 @@ int main() {
    else {
       printf("%d is not a leap year.", year);
    }
-   return 0;
+   getch();
 }

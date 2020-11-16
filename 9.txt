@@ -1,7 +1,9 @@
 #include <stdio.h>
-int main()
+#include <conio.h>
+void main()
 {
    int j,n;
+   clrscr();
    printf("Input the number (Table to be calculated) : ");
    scanf("%d",&n);
    printf("\n");
@@ -9,5 +11,5 @@ int main()
    {
      printf("%d X %d = %d \n",n,j,n*j);
    }
-return 0;
+getch();
 }

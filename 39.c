@@ -1,15 +1,19 @@
 #include <stdio.h>
+#include <conio.h>
+
 struct time{
   int tfhour;
   int tfseconds;
   int twhour;
 };
-int main ()
+
+void main ()
 {
   struct time Time;
+  clrscr();
   printf("Enter a 24-hour time (ex. 10:23): ");
   scanf("%d:%d", &Time.tfhour, &Time.tfseconds);
- 
+
   if (Time.tfseconds > 60 || Time.tfseconds < 0)
   {
     printf("Not a valid seconds time!\n");
@@ -29,5 +33,5 @@ int main ()
   {
     printf("Not a valid hour!\n");
   }
-return 0;
+getch();
 }

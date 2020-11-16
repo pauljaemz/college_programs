@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <conio.h>
 
-int main()
+void main()
 { 
 float num; 
 int x; 
+clrscr();
 scanf("%f",&num); 
 x=(int)num; 
 printf("%d",x%10); 
-return 0; 
+getch(); 
 } 

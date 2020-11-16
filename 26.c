@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main()
+#include <conio.h>
+void main()
 {
   char special_characters[100] = "@!#$%^&*()<>?/|}{~:'}";
   int count = 0, i, j;
   char string[100];
+  clrscr();
   printf("Enter the string >>>");
   gets(string);
 
@@ -15,6 +17,6 @@ int main()
       }
     }
   }
-  printf("%d", count);
-  return 0;
+  printf("Total number of special characters is %d", count);
+  getch();
 }

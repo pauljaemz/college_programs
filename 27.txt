@@ -2,13 +2,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
-int main()
+void main()
 {
    int num;
    FILE *fptr;
+   clrscr();
 
-   fptr = fopen("C:\\program.txt","w");
+   fptr = fopen("C:\\TURBOC3\\Projects\\program.txt","w");
 
    if(fptr == NULL)
    {
@@ -20,7 +22,7 @@ int main()
    scanf("%d",&num);
 
    fprintf(fptr,"%d",num);
-   if ((fptr = fopen("C:\\program.txt","r")) == NULL){
+   if ((fptr = fopen("C:\\TURBOC3\\Projects\\program.txt","r")) == NULL){
        printf("Error! opening file");
 
        exit(1);
@@ -30,5 +32,5 @@ int main()
 
    printf("Value of n=%d", num);
    fclose(fptr);
-   return 0;
+   getch();
 }

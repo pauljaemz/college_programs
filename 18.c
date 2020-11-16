@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <string.h>
-int main(){
+#include<conio.h>
+
+void main(){
   char a[100];
   char b[100];
   int i=0;
+  clrscr();
   printf("Enter the string >>>");
   gets(a);
   b[0] = a[0];
@@ -15,5 +18,5 @@ int main(){
     }
   }
   printf("%c.%c", b[0], b[1]);
-return 0;
+getch();
 }

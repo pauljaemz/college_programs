@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <math.h>
+#inlcude <conio.h>
 
-int main()
+void main()
 {
 	float x1, y1, x2, y2, gdistance;
+	clrscr();
 	printf("Input x1: ");
 	scanf("%f", &x1);
 	printf("Input y1: ");
@@ -15,5 +17,5 @@ int main()
 	gdistance = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
 	printf("Distance between the said points: %.4f", sqrt(gdistance));
 	printf("\n");
-	return 0;
+	getch();
 }

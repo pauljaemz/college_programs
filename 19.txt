@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
-int main(){
+void main(){
   float amount, converted_amount;
+  
   int option;
+  clrscr();
   printf("Enter the amount in Rupees >>>");
   scanf("%f", &amount);
   printf("1. U.S. Dollar (USD)\n2. Japanese Yen (JPY)\n3. British Pound (GBP)\n4. Canadian Dollar (CAD)");
@@ -27,5 +30,5 @@ int main(){
   else{
     printf("\nEnter the correct option.");
   }
-  return 0;
+  getch();
 }

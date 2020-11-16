@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <conio.h>
 int main() {
     int n, reversedN = 0, remainder, originalN;
+    clrscr();
     printf("Enter an integer: ");
     scanf("%d", &n);
     originalN = n;
@@ -14,5 +16,5 @@ int main() {
     else
         printf("%d is not a palindrome.", originalN);
 
-    return 0;
+    getch();
 }

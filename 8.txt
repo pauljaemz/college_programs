@@ -1,8 +1,9 @@
 #include <stdio.h>
-int main()
+#include <conio.h>
+void main()
 {
   int row, c, n;
-
+  clrscr();
   printf("Enter the number of rows in pyramid of stars to print\n");
   scanf("%d", &n);
 
@@ -17,5 +18,5 @@ int main()
     printf("\n");
   }
 
-  return 0;
+  getch();
 }
