@@ -1,10 +1,12 @@
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
-int main()
+
+void main()
 {
     char str1[80], str2[80];
     int k,i,j;
+	clrscr();
     printf("Enter the first string :");
     gets(str1);
     printf("Enter the second string :");
@@ -29,5 +31,5 @@ int main()
     else{
         printf("Substring not found");
     }
-    return 0;
+    getch();
 }

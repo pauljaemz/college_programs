@@ -1,16 +1,19 @@
 #include<stdio.h>
 #include<conio.h>
 #define size 5
+
 void insertq(int[], int);
 void deleteq(int[]);
 void display(int[]);
 
 int front = -1;
 int rear = -1;
-int main()
+
+void main()
 {
     int n,ch;
     int queue[size];
+	clrscr();
     do
     {
         printf("\n\n Circular Queue :\n 1. Insert \n 2.Delete \n 3.Display \n 0.Exit");
@@ -32,7 +35,7 @@ int main()
         }
     }
     while (ch!= 0);
-    return 0;
+    getch();
 }
 void insertq(int queue[], int item)
 {

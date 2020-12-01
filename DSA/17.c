@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<conio.h>
 
 struct node
 {
@@ -58,9 +59,10 @@ void search()
     }
 }
 
-int main()
+void main()
 {
     int choice, item;
+	clrscr();
     while(choice != 3)
     {
         printf("\n1.Create\n2.Search.\n3.Exit.\n4.Enter your choice?");
@@ -89,4 +91,5 @@ int main()
             }
         }
     }
+	getch();
 }

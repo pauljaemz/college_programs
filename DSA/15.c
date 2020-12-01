@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<conio.h>
 #include<stdlib.h>
 
 struct Node
@@ -54,6 +54,7 @@ int main()
 {
     int choice = 0;
     int value = 0;
+	clrscr();
     printf("\n Queue Implementation using linked list \n");
     while(choice != 4)
     {
@@ -90,4 +91,5 @@ int main()
                 }
         }
     }
+	getch();
 }

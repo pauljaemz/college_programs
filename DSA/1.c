@@ -1,7 +1,9 @@
 #include<stdio.h>
-int main()
+#include<conio.h>
+void main()
 {
     int a[100],b[100],m,n,i;
+	clrscr();
     printf("Enter the number of elements in the array :");
     scanf("%d",&m);
 
@@ -28,5 +30,5 @@ int main()
     {
         printf("%d,",a[i]);
     }
-    return 0;
+    getch();
 }

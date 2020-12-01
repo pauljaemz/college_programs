@@ -1,8 +1,10 @@
 #include<stdio.h>
-int main()
+#include<conio.h>
+void main()
 {
     int i,j,item,loc=0,loc1=0,n,r,c;
     int ar[10][10];
+	clrscr();
     printf("Enter the number of rows in the array :");
     scanf("%d",&r);
     printf("Enter the number of columns in the array :");
@@ -32,5 +34,5 @@ int main()
     }
     printf("\nThe item found in %d Row and %d Column (a%d%d).",loc,loc1,loc,loc1);
     printf("\nSearch Completed.");
-    return 0;
+    getch();
 }

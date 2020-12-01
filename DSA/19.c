@@ -1,5 +1,7 @@
 #include<stdio.h>
-int main()
+#include<conio.h>
+
+void main()
 {
     int a[100],b[100],m,n,i;
     printf("Enter the number of elements in the first array :");
@@ -28,6 +30,6 @@ int main()
     }
     for(i=0;i<m+n;i++)
         printf("%d,",a[i]);
-    return 0;
+    getch();
 }
 

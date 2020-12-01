@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<conio.h>
 #define MAX 5
+
 void insert();
 void delet();
 void display();
@@ -8,9 +10,10 @@ int queue_array[MAX];
 int rear = -1;
 int front = -1;
 
-int main()
+void main()
 {
     int choice;
+	clrscr();
     while(1)
     {
         printf("1. Insert element to queue \n");
@@ -36,6 +39,7 @@ int main()
             printf("Wrong choice");
         }
     }
+	getch();
 }
 void insert()
 {

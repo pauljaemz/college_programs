@@ -1,10 +1,11 @@
-
+#include<conio.h>
 #include<stdio.h>
 void quicksort (int [], int, int);
-int main()
+void main()
 {
     int list[50];
     int size, i;
+	clrscr();
     printf("Enter the number of elements: ");
     scanf("%d", &size);
     printf("Enter the elements to be sorted:\n");
@@ -19,7 +20,7 @@ int main()
         printf("%d ", list[i]);
     }
     printf("\n");
-    return 0;
+    getch();
 }
 void quicksort(int list[], int low, int high)
 {

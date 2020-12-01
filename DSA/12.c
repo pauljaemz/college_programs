@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<conio.h>
+
 char stack[20];
 int top = -1;
 void push(char x)
@@ -21,10 +23,11 @@ int priority(char x)
     if(x == '*' || x == '/')
         return 2;
 }
-main()
+void main()
 {
     char exp[20];
     char *e, x;
+	clrscr();
     printf("Enter the expression ::");
     scanf("%s", exp);
     e = exp;
@@ -60,4 +63,5 @@ main()
     {
         printf("%c", pop());
     }
+	getch();
 }

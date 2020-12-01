@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<conio.h>
 
 typedef struct BST
 {
@@ -14,11 +15,12 @@ void inorder(node *);
 void preorder(node *);
 void postorder(node *);
 
-int main()
+void main()
 {
   char ch;
   node *root=NULL, *temp;
   int n;
+  clrscr();
   printf("How many nodes >>>");
   scanf("%d", &n);
   for(int i = 0; i < n; i++)
@@ -39,7 +41,7 @@ int main()
   preorder(root);
   printf("\nPostorder Tranversal :");
   postorder(root);
-return 0;
+getch();
 }
 
 node *create()

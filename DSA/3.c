@@ -1,8 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
-int main()
+#include<conio.h>
+void main()
 {
     int first,last,middle,size,i,key,list[100];
+	clrscr();
     printf("\nEnter the size of the list :");
     scanf("%d",&size);
     printf("\nEnter the integer values in the ascending order :");
@@ -36,5 +38,5 @@ int main()
     {
         printf("\nElement not found in the list. \n");
     }
-    return 0;
+    getch();
 }

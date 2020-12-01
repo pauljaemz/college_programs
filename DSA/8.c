@@ -3,6 +3,7 @@
 void main()
 {
     int a[10][10], b[10][3],m,n, s=1,i,j,c=0;
+	clrscr();
     printf("Enter the order m * n of the sparse matrix\n");
     scanf("%d%d", &m,&n);
     printf("Enter the elements in the sparse matrix\n");
@@ -52,5 +53,5 @@ void main()
         }
         printf("\n");
     }
-    return 0;
+    getch();
 }

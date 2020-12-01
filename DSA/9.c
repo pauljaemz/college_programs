@@ -1,11 +1,15 @@
 #include<stdio.h>
+#include<conio.h>
+
 int stack[100], choice, n, top, x, i;
 void push(void);
 void pop(void);
 void display(void);
-int main()
+
+void main()
 {
     top = -1;
+	clrscr();
     printf("\nEnter the size of the stack[max = 100] :");
     scanf("%d", &n);
     printf("\n\tStack operations using array");
@@ -45,7 +49,7 @@ int main()
         }
     }
     while(choice != 4);
-        return 0;
+        getch();
 
 }
 void push()

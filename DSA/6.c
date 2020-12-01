@@ -1,9 +1,11 @@
 #include<stdio.h>
 #include<string.h>
-int main()
+#include<conio.h>
+void main()
 {
     int i,j,n;
     char str[25][25],temp[25];
+	clrscr();
     printf("Enter the number of words :");
     scanf("%d",&n);
     printf("Enter the strings :");
@@ -28,5 +30,5 @@ int main()
     {
         puts(str[i]);
     }
-    return 0;
+    getch();
 }
