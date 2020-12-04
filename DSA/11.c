@@ -16,7 +16,7 @@ void main()
 	clrscr();
     do
     {
-        printf("\n\n Circular Queue :\n 1. Insert \n 2.Delete \n 3.Display \n 0.Exit");
+        printf("\n\t Circular Queue : 1. Insert  2.Delete  3.Display  0.Exit");
         printf("\nEnter the choice 0-3? ");
         scanf("%d", &ch);
         switch(ch)

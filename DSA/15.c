@@ -59,8 +59,8 @@ int main()
     while(choice != 4)
     {
         printf("\n*******MENU*********\n");
-        printf("1.Insert\n2.Delete \n3.Display\n4.Exit\n");
-        printf("Enter the choice :");
+        printf("1.Insert\ 2.Delete \ 3.Display\ 4.Exit\n");
+        printf("\nEnter the choice :");
         scanf("%d", &choice);
         switch(choice)
         {

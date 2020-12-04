@@ -16,10 +16,7 @@ void main()
 	clrscr();
     while(1)
     {
-        printf("1. Insert element to queue \n");
-        printf("2. Delete element from queue \n");
-        printf("3. Display all the elements \n");
-        printf("4. Quit\n\n");
+        printf("\t1. Insert 2.Delete 3. Display 4.Quit \n");
         printf("Enter the choice\n");
         scanf("%d", &choice);
         switch(choice)

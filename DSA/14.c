@@ -18,7 +18,7 @@ void push()
 	}
 	else
     {
-		printf("Enter the value");
+		printf("Enter the value\n");
 		scanf("%d", &val);
 		if(head == NULL)
 		{
@@ -75,11 +75,11 @@ void main()
 {
 	int choice = 0;
 	clrscr();
-	printf("\n____________________Stack Operations using linkedlist__________________");
+	printf("\n____________________Stack Operations using linkedlist__________________\n");
 	while(choice!= 4)
 	{
-		printf("\n1.Push\n2.Pop\n3.Show\n4.Exit");
-		printf("Enter the chioce");
+		printf("\n\n1.Push\n2.Pop\n3.Show\n4.Exit\n");
+		printf("Enter the choice\n");
 		scanf("%d", &choice);
 		switch(choice)
 		{
@@ -105,7 +105,7 @@ void main()
 			}
 			default:
 			{
-				printf("Please enter a valid chioce");
+				printf("Please enter a valid choice");
 			}
 		}
 	}

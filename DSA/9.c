@@ -12,9 +12,9 @@ void main()
 	clrscr();
     printf("\nEnter the size of the stack[max = 100] :");
     scanf("%d", &n);
-    printf("\n\tStack operations using array");
+    printf("\tStack operations using array");
 
-    printf("\n\t 1.PUSH\n\t 2.POP\n\t 3.DISPLAY\n\t 4.EXIT");
+    printf("\n\t 1.PUSH\t 2.POP\t 3.DISPLAY\t 4.EXIT");
     do
     {
         printf("\nEnter the choice :");
@@ -82,7 +82,7 @@ void display()
 {
     if(top >= 0)
     {
-        printf("\n\nThe elements in stack \n");
+        printf("\nThe elements in stack \n");
         for(i=top; i>=0; i--)
             printf("\n%d", stack[i]);
         printf("\n Press Next Choice");
