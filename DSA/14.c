@@ -8,6 +8,7 @@ struct node
 	struct node * next;
 };
 struct node * head;
+
 void push()
 {
 	int val;
@@ -78,7 +79,7 @@ void main()
 	printf("\n____________________Stack Operations using linkedlist__________________\n");
 	while(choice!= 4)
 	{
-		printf("\n\n1.Push\n2.Pop\n3.Show\n4.Exit\n");
+		printf("\n\n1.Push | 2.Pop | 3.Show | 4.Exit\n");
 		printf("Enter the choice\n");
 		scanf("%d", &choice);
 		switch(choice)
