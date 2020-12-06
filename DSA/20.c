@@ -19,11 +19,12 @@ void main()
 {
   char ch;
   node *root=NULL, *temp;
-  int n;
+  int n, i;
   clrscr();
+  printf("\n\tBinary Traversal\n\n");
   printf("How many nodes >>>");
   scanf("%d", &n);
-  for(int i = 0; i < n; i++)
+  for(i = 0; i < n; i++)
   {
     temp = create();
     if(root == NULL)

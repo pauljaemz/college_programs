@@ -52,7 +52,7 @@ void search()
             i++;
             ptr = ptr->next;
         }
-        if(flag == 0)
+        if(flag == 1)
         {
             printf("Item not found\n");
         }

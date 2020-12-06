@@ -6,6 +6,7 @@ void main()
     int list[50];
     int size, i;
 	clrscr();
+	printf("\tImplementation of Quick Sort\n\n");
     printf("Enter the number of elements: ");
     scanf("%d", &size);
     printf("Enter the elements to be sorted:\n");
