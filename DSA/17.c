@@ -27,6 +27,8 @@ void main()
 	int no,i,item,pos;
  
 	clrscr();
+	
+	printf("Searching in a Linked List\n\n");
  
 	first.next=NULL;
  

@@ -6,14 +6,16 @@ void main()
     int a[100],b[100],m,n,i,j,k, temp;
 	clrscr();
 	
-    printf("Enter the number of elements in the first array :");
+	printf("Implementation of Merge Sort\n\n");
+	
+    printf("Enter the number of elements in the first array : ");
     scanf("%d",&m);
 	
-    printf("Enter the elements :");
+    printf("Enter the elements : ");
     for(i=0;i<m;i++)
         scanf("%d",&a[i]);
 		
-    printf("Enter the number of elements in the second array :");
+    printf("Enter the number of elements in the second array : ");
     scanf("%d",&n);
 	
     printf("Enter the elements :");
@@ -34,7 +36,7 @@ void main()
             }
         }
     }
-	printf("\nList after merge sort");
+	printf("\nList after merge sort >>> ");
 	
     for(i=0;i<m+n;i++)
         printf("%d,",a[i]);

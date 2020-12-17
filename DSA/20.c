@@ -21,7 +21,7 @@ void main()
   node *root=NULL, *temp;
   int n, i;
   clrscr();
-  printf("\n\tBinary Traversal\n\n");
+  printf("\nBinary Traversal\n\n");
   printf("How many nodes >>>");
   scanf("%d", &n);
   for(i = 0; i < n; i++)
