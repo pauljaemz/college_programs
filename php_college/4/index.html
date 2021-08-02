@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Controls</title>
+    </head>
+    <body>
+        <form>
+            <label for="age">Choose your age</label>
+            <input list="ages">
+            <datalist id="ages">
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+            </datalist>
+            <br><br>
+            <label for="lang">How many languages do you Know?</label><br>
+            <select name="lang" multiple>
+                <option value="english">English</option>
+                <option value="mal">Malayalam</option>
+                <option value="tamil">Tamil</option>
+                <option value="tel">Telungu</option>
+            </select>
+            <br><br>
+            <label for="place">Where do you live?</label><br>
+            <select name="place">
+                <optgroup label="Asia">
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                </optgroup>
+                <optgroup label="middleeast">
+                    <option value="egypt">Egypt</option>
+                    <option value="iran">Iran</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
