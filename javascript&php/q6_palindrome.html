@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Palindrome Tester</title>
+	<script type="text/javascript">
+		function test_palindrome(){
+			var string=document.getElementById("input").value
+			var string_array=string.split('')
+			var reversed=string_array.reverse().join('')
+			if(string==reversed){
+				document.getElementById("result").innerHTML="<i>"+string+"</i> is a palindrome."
+			}
+			else{
+				document.getElementById("result").innerHTML="<i>"+string+"</i> is not a palindrome."
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="content" style="text-align:center;">
+		<h2> Enter a string below</h2>
+		<form name="form1">
+			<input type="text" id="input"  size=30 style="font-size:20px;height:40px">
+			<button type="button" style="font-size:20px;height:43px" onclick="test_palindrome()">Check!</button>
+			<h3><div id="result"></div></h3>
+		</form>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+
+<head>
+	<title>Perfect Numbers</title>
+<script>
+
+
+function callback()
+{
+
+    var num=document.getElementById("input").value;
+    var i,sum=0;
+    if(num>0){
+            for (i = 1; i < num; i++)
+            {
+                if (num % i == 0)
+                {
+		          sum+=i;
+                }
+            }
+        if(sum==num)
+        	alert("The number is perfect.");
+        else if(sum>num)
+        	alert("The number is abundant.");
+        else
+        	alert("The number is deficient.");
+    }
+    else
+        document.write("The entered value is invalid.");
+   
+}
+
+</script>
+</head>
+
+<body>
+    <div style="text-align: center"
+ <form name=form1>
+        <h3>Enter the number here:</h3>
+       <input type="text" name="text1" id="input" size=10 style="height: 40px;font-size: 20px;">
+       <br>
+       <input type="button" value="Check" onClick="callback();" style="height: 35px;margin-top:5px;font-size: 15px;">  
+    </form>
+
+</div>
+</body>
+</html>
+
+

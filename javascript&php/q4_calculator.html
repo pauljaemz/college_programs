@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Simple Calculator</title>
+<script>
+
+function addNum()
+{
+ num1=parseInt(document.form1.txt1.value);
+ num2=parseInt(document.form1.txt2.value);
+ num3=num1+num2;
+ document.form1.result.value=num3;
+}
+function subNum()
+{
+ num1=parseInt(document.form1.txt1.value);
+ num2=parseInt(document.form1.txt2.value);
+ num3=num1-num2;
+ document.form1.result.value=num3;
+}
+function mulNum()
+{
+ num1=parseInt(document.form1.txt1.value);
+ num2=parseInt(document.form1.txt2.value);
+ num3=num1*num2;
+ document.form1.result.value=num3;
+}
+function divNum()
+{
+ num1=parseInt(document.form1.txt1.value);
+ num2=parseInt(document.form1.txt2.value);
+ num3=num1/num2;
+ document.form1.result.value=num3;
+}
+</script></head>
+<body>
+	<div style="text-align: center;">
+		<h3> Simple Calculator </h3>
+<form name="form1">
+
+ 	Number 1&nbsp;<input type ="text" name="txt1" ><br><br>
+ 	Number 2&nbsp;<input type ="text" name="txt2" ><br><br>
+ 	
+ 
+ <input type="button" value="+" name="but1" onClick="addNum()">
+ <input type="button" value="-" name="but2" onClick="subNum()">
+ <input type="button" value="x" name="but3" onClick="mulNum()">
+ <input type="button" value="/" name="but4" onClick="divNum()">
+ <br><br>
+<output name="result" style="font-weight: bold;"></output><br>
+</form>
+</div>
+</body></html> 

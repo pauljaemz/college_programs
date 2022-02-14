@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Registration</title>
+<script>
+function validate()
+{
+	var ps=document.getElementById('pass').value;
+	if(ps.length<8)
+	{
+		alert("Minimum 8 characters required for password.");
+	}
+	else{
+		var cps=document.getElementById('con').value;
+		if(ps!==cps)
+		{
+			alert("Passwords do not match")
+		}
+        else
+        {
+             alert("User registration successful.");
+        }
+    }
+}
+function check()
+{
+	var p=document.getElementById('pass').value;
+	var len= p.length;
+	if(len<8)
+	{
+
+		document.getElementById('lbl').innerHTML="<span style='color:red;'>Weak password.</span>";
+	}
+	else
+	{
+		document.getElementById('lbl').innerHTML="<span style='color:green;'>Strong password.</span>";
+	}
+}
+</script>
+</head>
+<body>
+<center>
+	<form action="">
+	<h2>User Registration</h2>
+	<table cellpadding=5 cellspacing="5">
+	<tr>
+	<td>
+		Name
+	</td>
+	<td>
+		<input type="text" id="name" required>
+	</td>
+	</tr>
+	<tr>
+		<td>
+			Email ID
+		</td>
+		<td>
+			<input type="email" id="em" required>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Password
+		</td>
+		<td>
+			<input type="password" id="pass" required onkeyup="check()">
+		</td>
+		<td>
+			<label id="lbl">Minimum 8 characters</label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Confirm password
+		</td>
+		<td>
+			<input type="password" id="con"  required>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			<input type="submit" name="btn" value="Submit" onclick="validate()">
+		</td>
+	</tr>
+	</table>
+	</form>
+	</center>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum of array</title>
+	<script type="text/javascript">
+		var l=Number(prompt("Enter the number of elements to be included in the array "));
+		var numarray=[];
+		sum=0;
+		for(i=0;i<l;i++){
+			var num=Number(prompt("Enter element "+(i+1)+" of the array "));
+			numarray.push(num);
+		}
+		for(x of numarray){
+			sum+=x;
+		}
+		alert("The sum of elements in the array is "+sum+".");
+	</script>
+</head>
+<body>
+</body>
+</html>

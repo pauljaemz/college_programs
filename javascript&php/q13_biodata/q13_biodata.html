@@ -1,0 +1,64 @@
+<html><head> 
+<title>Bio.ME</title>
+  </head>
+<script>
+var edq=2;
+function add_qual()
+{	var field_div = document.getElementById('edu_div');
+   	field_div.innerHTML += edq+".&nbsp;&nbsp;<input type='text' size='40' name='edq"+ edq++ +"'><br><br>";
+}
+var exp=2;
+function add_exp()
+{	var field_div = document.getElementById('exp_div');
+   	field_div.innerHTML += exp+".&nbsp;&nbsp;<input type='text' size='40' name='exp"+ exp++ +"'><br><br>";
+}
+</script>
+ <body> 
+  <h1 id="title" align="center">Bio.ME</h1> 
+  <form method='post' action='submit.php'> 
+   <table cellpadding="5px" cellspacing="10px" width="22%" align="center"> 
+    <tbody>
+     <tr> 
+      <td> <b>Full Name</b><br> <input type="text" size="40" name="fname" required> </td> 
+      <td> <b>Title/Designation</b><br> <input size="40" type="text" name='title' required> </td> 
+     </tr> 
+     <tr> 
+      <td> <b>E-mail Address</b><br> <input size="40" type="text" name='email' required> </td> 
+      <td> <b>Phone Number</b><br> <input size="40" type="text" name='phone' required> </td> 
+    </tr>
+    <tr>
+      <td> <b>Nationality</b><br> <input size="40" type="text" name='nation'> </td> 
+      <td> <b>Age</b><br> <input size="40" type="number" name='age'> </td> 
+     </tr>
+     <tr> 
+     <td>
+        <b>Gender</b>&nbsp;<input type="radio" name="gender" value='Male'>Male&nbsp;&nbsp;<input type="radio" name="gender" value='Female'>Female&nbsp;&nbsp;</td>
+      </tr>
+     <tr> 
+      <td colspan='2'> <b>Address</b><br> <textarea cols=50 rows=4 name="address"></textarea> </td> 
+  
+     </tr> 
+     <tr> 
+      <td colspan="2"><fieldset><legend><b>Educational Qualifications</b></legend>  <div id='edu_div'><button type="button" onclick="add_qual();">Add a qualification field</button> <br>
+	<br> 1.&nbsp;&nbsp;<input size="40" type="text" name="edq1"> <br><br>
+	</div></fieldset>
+	</td> 
+       
+     </tr> 
+     <tr> 
+      <td colspan="2">  <fieldset><legend><b>Professional Experience</b></legend> <div id='exp_div'><button type="button" onclick="add_exp();">Add an experience field</button> <br>
+	<br> 1.&nbsp;&nbsp;<input size="40" type="text" name="exp1"> <br><br>
+	</div></fieldset>
+	</td>
+     </tr> 
+     <tr>
+      <td colspan=2> 
+       <div style="padding:20px" align="center"> 
+        <input type="submit" value="Submit" style="width:100px;">&nbsp;&nbsp; 
+        <input type="reset" value="Reset" style="width:100px;"> 
+       </div> </td> 
+     </tr> 
+    </tbody>
+   </table> 
+  </form> 
+</body></html>

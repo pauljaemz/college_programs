@@ -1,0 +1,24 @@
+<html>
+
+<head>
+	<title>Multiplication Table</title>
+<script>
+
+
+function callback()
+{
+    var num=parseInt(prompt("Enter a positive number"));
+    var limit=parseInt(prompt("Enter the limit up to which multiplication table is to be printed"));
+    var i;
+    for(i=1;i<=limit;i++)
+    {
+    	document.write(i+" x "+num+" = "+(i*num)+"<br>");
+    }
+}
+</script>
+</head>
+<body onload="callback()">
+</body>
+</html>
+
+

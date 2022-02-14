@@ -1,0 +1,59 @@
+<html>
+<head> 
+  <title>
+    Seat Allotment
+  </title>
+  <script>
+     function focustrigger(element)  
+     {
+  
+           document.getElementById(element.id).style.backgroundColor="azure";
+           document.getElementById(element.id).style.color = "magenta";
+     }
+       function blurtrigger(element)
+       {
+                document.getElementById(element.id).style.backgroundColor="transparent";
+                document.getElementById(element.id).style.color = "";
+       }
+       function displayseat()
+       {
+           
+           if(document.getElementById("id01").value.length&&document.getElementById("id02").value.length&&document.getElementById("id03").value.length){
+            document.getElementById("code").innerHTML="The allotted seat is AS"+(Math.floor(Math.random() * 100)+1);
+          }
+          else
+          {
+            document.getElementById("code").innerHTML="";
+            alert("Please fill all fields.");
+           
+       }
+          }
+   </script> 
+ </head> 
+ <body> 
+  <h1 id="title" align="center">Seat Allotment</h1> 
+  <form> 
+   <table padding="3px" width="22%" align="center"> 
+    <tbody>
+     <tr> 
+      <td> <b>Student Name</b><br> <input type="text" size=45 onclick="focustrigger(this)" onblur="blurtrigger(this)" id="id01"> </td> 
+      
+     </tr> 
+     <tr> 
+      <td> <b>Class</b><br> <input type="text" onclick="focustrigger(this)" onblur="blurtrigger(this)" size=45 id="id02"> </td> 
+      
+     </tr> 
+     <tr> 
+      <td> <b>Register Number</b><br> <input onclick="focustrigger(this)" onblur="blurtrigger(this)" size=45 type="text" id="id03"> </td> 
+     </tr> 
+     <tr>
+       <td colspan=2 align="center"><button type="button" onclick="displayseat()">Submit</button></td>
+     </tr>
+     <tr>
+       <td colspan=2 align="center" id="code"></td>
+     </tr>
+    </tbody>
+   </table> 
+  </form> 
+ 
+</body></html>

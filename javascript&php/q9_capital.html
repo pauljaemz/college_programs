@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Capital</title>
+	<script type="text/javascript">
+		var capital_arr={"India":"New Delhi","United States of America":"Washington DC","Pakistan":"Islamabad","Bangladesh":"Dhaka","Thailand":"Bangkok","Philippines":"Manila","Nepal":"Kathmandu"};
+		console.log(capital_arr)
+		function display_capital(){
+			var country=document.getElementById("countrylist").value;
+			document.getElementById("result").innerHTML="<p>The capital of "+country+" is</p>"
+			+"<input type=\"text\" id=\"capital\" size=20 style=\"height: 18px;font-size: 18px;\"  value=\""+String(capital_arr[country])+"\" readonly>";
+		}
+	</script>
+</head>
+<body>
+	<fieldset style="width:30%;text-align:center;margin: 0px auto;">
+		<legend><h3>Choose the country</h3></legend>
+		<select style="height:35px" id="countrylist" onchange="display_capital()">
+			<option>India</option>
+			<option>United States of America</option>
+			<option>Pakistan</option>
+			<option>Bangladesh</option>
+			<option>Thailand</option>
+			<option>Philippines</option>
+			<option>Nepal</option>
+		</select>
+		<div id="result"></div>
+		
+	</fieldset>
+</body>
+</html>

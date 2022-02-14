@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Area and circumference of a circle</title>
+</head>
+<body>
+  <script>
+    function CalcCirc(){
+        var radius =document.form1.text1.value;
+        document.write("<div style='text-align:center;margin-top:100px;'><p>The area of the circle is " + (radius * radius * Math.PI).toFixed(3) + "</p>");
+        document.write("<p>The circumference of the circle is " + (2 * radius * Math.PI).toFixed(3) + "</p></div>");
+    }
+    </script>
+    <div style="text-align: center;">
+    <form name=form1>
+        <h3>Enter the radius of circle:</h3>
+       <input type="text" name="text1" size=10 style="height: 40px;font-size: 20px">
+       <br>
+       <input type="button" value="Calculate" onClick='CalcCirc();' style="height: 35px;margin-top:5px;font-size: 15px">  
+    </form>
+  </div>
+</body>
+</html>

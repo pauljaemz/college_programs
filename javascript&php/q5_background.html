@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>
+		Coloured Backgrounds
+	</title>
+	<style>
+		div{
+			
+			text-align:center;
+			font-family:Gill Sans MT, sans-serif; 
+			font-variant: bold;
+			
+		}
+		#above{
+					
+					margin-top:13%;
+					font-size:50px;
+		}
+		#mid{
+			font-size:80px;
+		}
+		#below{
+			font-size:50px;
+		}
+	</style>
+	<script>
+		function bg_change()
+		{
+			var colour_arr=["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Beige","BlanchedAlmond","Blue","BlueViolet","CadetBlue","CornflowerBlue","Crimson","DarkOrange","DeepPink"];
+			document.getElementById("mid").innerHTML=colour_arr[bg_change.index];
+			document.getElementById("above").innerHTML=bg_change.prev;
+			document.getElementById("below").innerHTML=colour_arr[(bg_change.index+1)%colour_arr.length];
+			document.body.style.background=colour_arr[bg_change.index];
+			document.getElementById("mid").style.color="white";
+			document.getElementById("above").style.color="silver";
+			document.getElementById("below").style.color="silver";
+			bg_change.prev=colour_arr[bg_change.index];
+			bg_change.index++;
+			bg_change.index%=colour_arr.length;
+
+		}
+		bg_change.index=0;
+		bg_change.prev="";
+	</script>
+</head>
+<body  onwheel="bg_change()" >
+<div id="above" align="center">&nbsp;</div>
+<div id="mid" align="center">Scroll down to see the magic!</div>
+<div id="below" align="center">&nbsp;</div>
+</body>
+</html>
+
