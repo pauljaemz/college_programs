@@ -39,11 +39,15 @@ ISIN : INE273F01022
 	</tr>
 
 <?php
+
+$cookie_name = "last_login";
+$date = date('d/m/Y h:i:s a', time());
+setcookie($cookie_name, $date);
+
 if(isset($_COOKIE["last_login"])) {
   echo "<tr><td align='center'><font color='red'><i>Last login time : ". $_COOKIE["last_login"]."</i></font></td></tr></table>";
 } else {
   echo "<tr><td align='center'><font color='red'><i>This is your first time visit.</i></font></td></tr></table>";
 }
-$cookie_name = "last_login";
-$date = date('d/m/Y h:i:s a', time());
-setcookie($cookie_name, $date, "/");
+
+?>
